@@ -5,6 +5,7 @@ curl = {
         'jquery-hashchange': 'ext/jquery-hashchange',
         'curl/plugin/twig': '../modules/twig/twig',
         'curl/plugin/css': '../modules/curl/src/curl/plugin/css',
+	'curl/plugin/md': '../modules/curl/src/curl/plugin/text',
 	'bootstrap/css': '../modules/bootstrap/docs/assets/css'
     },
     packages: {
@@ -22,8 +23,8 @@ curl = {
         },
         'foliage' : {
             'location':'../modules/foliage',
-            'main':'foliage',
-            'lib': 'ext'
+            'main':'foliage'
+
         },
         'epiphyte' : {
             'location':'../modules/epiphyte',
