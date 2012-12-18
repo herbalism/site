@@ -24,7 +24,7 @@
 	url = git://github.com/twitter/bootstrap
 [submodule "modules/papyrus"]
 	path = modules/papyrus
-	url = git@github.com:herbalism/papyrus.git
+	url = git://github.com/herbalism/papyrus
 [submodule "modules/markdown-js"]
 	path = modules/markdown-js
-	url = git@github.com:evilstreak/markdown-js.git
+	url = git://github.com/evilstreak/markdown-js
