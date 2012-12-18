@@ -5,7 +5,9 @@ curl = {
         'jquery-hashchange': 'ext/jquery-hashchange',
         'curl/plugin/twig': '../modules/twig/twig',
         'curl/plugin/css': '../modules/curl/src/curl/plugin/css',
-	'curl/plugin/md': '../modules/curl/src/curl/plugin/text',
+	'curl/plugin/md': '../modules/papyrus/papyrus-md',
+	'curl/plugin/js': '../modules/curl/src/curl/plugin/js',
+	'curl/plugin/text': '../modules/curl/src/curl/plugin/text',
 	'bootstrap/css': '../modules/bootstrap/docs/assets/css'
     },
     packages: {
@@ -13,6 +15,15 @@ curl = {
 	    'location':'../modules/lodash',
 	    'main':'lodash'
 	},
+	'markdown': {
+	    'path': '../modules/markdown-js/lib',
+	    'main': 'markdown.js'
+	},
+	'papyrus': {
+	    'location':'../modules/papyrus',
+	    'main':'papyrus-md'
+	},
+
 	'phloem': {
 	    'location':'../modules/phloem',
             'main':'phloem'

@@ -22,3 +22,9 @@
 [submodule "modules/bootstrap"]
 	path = modules/bootstrap
 	url = git://github.com/twitter/bootstrap
+[submodule "modules/papyrus"]
+	path = modules/papyrus
+	url = git@github.com:herbalism/papyrus.git
+[submodule "modules/markdown-js"]
+	path = modules/markdown-js
+	url = git@github.com:evilstreak/markdown-js.git
