@@ -1,14 +1,24 @@
-define(['foliage', 'lodash'], function(f, _) {
+define(['foliage', 'foliage/foliage-event', 'lodash'], function(f, on, _) {
     return function(article) {
-	var intro =  ['markdown', article.AST[1], article.AST[2]]
-	console.log(intro);
+	var title = article.AST[1][2];
+	var intro = article.AST[2]
 
-	console.log(article.AST);
-	
+	var popover = function(title, body) {
+	    var htmlFactory = $('<div />');
+	    body(htmlFactory);
+	    var html = htmlFactory.html();
+	    return function(parent) {
+		$(parent).popover({title: title,
+				   content: html,
+				   html: true,
+				   trigger:'hover'});
+	    }
+	}
 
-	return f.div({'class':'row'},
-	    f.div({'class':'span2'}, 
-		  f.img({src:'http://placekitten.com/160/160', 'class':'img-rounded span3'})),
-		  f.div({'class':'span5'},article.toFoliage(intro)))
+	return f.li({'class':'span3'}, 
+		    f.div({'class':'thumbnail'},
+			  popover(title, article.toFoliage(intro)),
+			  f.img({src:'http://placekitten.com/160/160', 'class':'img-rounded span3'}),
+			  f.strong(article.toFoliage(title))))
     }
 })
