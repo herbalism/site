@@ -28,3 +28,9 @@
 [submodule "modules/markdown-js"]
 	path = modules/markdown-js
 	url = git://github.com/evilstreak/markdown-js
+[submodule "modules/blossom"]
+	path = modules/blossom
+	url = git://github.com/herbalism/blossom.git
+[submodule "modules/less.js"]
+	path = modules/less.js
+	url = git://github.com/cloudhead/less.js.git

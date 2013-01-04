@@ -8,13 +8,17 @@ curl = {
 	'curl/plugin/md': '../modules/papyrus/papyrus-md',
 	'curl/plugin/js': '../modules/curl/src/curl/plugin/js',
 	'curl/plugin/text': '../modules/curl/src/curl/plugin/text',
-	'bootstrap/css': '../modules/bootstrap/docs/assets/css'
+	'curl/plugin/blossom': '../modules/blossom/blossom',
+	'bootstrap/css': '../modules/bootstrap/docs/assets/css',
+	'bootstrap/less': '../modules/bootstrap/less',
+	'less':'../modules/less.js/dist/less-1.3.1.js'
     },
     packages: {
 	'lodash': {
 	    'location':'../modules/lodash',
 	    'main':'lodash'
 	},
+
 	'markdown': {
 	    'path': '../modules/markdown-js/lib',
 	    'main': 'markdown.js'
@@ -23,7 +27,6 @@ curl = {
 	    'location':'../modules/papyrus',
 	    'main':'papyrus-md'
 	},
-
 	'phloem': {
 	    'location':'../modules/phloem',
             'main':'phloem'
