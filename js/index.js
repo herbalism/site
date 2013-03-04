@@ -19,9 +19,9 @@ define(['foliage',
 			     f.div({'class': 'row'},
 				   f.ul(
 				       {'class': 'thumbnails'},
-				       overview(foliage),
-				       overview(twig),
-				       overview(phloem),
-				       overview(epiphyte),
-				       overview(papyrus))))));
+				       overview(foliage, 'foliage'),
+				       overview(twig, 'twig'),
+				       overview(phloem, 'phloem'),
+				       overview(epiphyte, 'epiphyte'),
+				       overview(papyrus, 'papyrus'))))));
 })
