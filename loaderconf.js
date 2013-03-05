@@ -18,7 +18,6 @@ curl = {
 	    'location':'../modules/lodash',
 	    'main':'lodash'
 	},
-
 	'markdown': {
 	    'path': '../modules/markdown-js/lib',
 	    'main': 'markdown.js'
@@ -35,10 +34,14 @@ curl = {
             'path':'../modules/twig',
             'main':'twig',
         },
+        'blossom': {
+            'path':'../modules/blossom',
+            'main':'blossom',
+        },
+
         'foliage' : {
             'location':'../modules/foliage',
             'main':'foliage'
-
         },
         'epiphyte' : {
             'location':'../modules/epiphyte',
