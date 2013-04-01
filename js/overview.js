@@ -1,4 +1,4 @@
-define(['foliage', 'foliage/foliage-event', 'lodash'], function(f, on, _) {
+define(['require', 'foliage', 'foliage/foliage-event', 'lodash', 'twig-base'], function(require, f, on, _, base) {
     return function(article, name) {
 	var title = article.AST[1][2];
 	var intro = article.AST[2]
@@ -18,7 +18,11 @@ define(['foliage', 'foliage/foliage-event', 'lodash'], function(f, on, _) {
 	return f.li({'class':'span3'}, 
 		    f.div({'class':'thumbnail'},
 			  popover(title, article.toFoliage(intro)),
-			  f.img({src:'modules/'+name+'/logo.svg', 'class':'img-rounded span3'}),
+                          f.a(f.img({src:'modules/'+name+'/logo.svg', 'class':'img-rounded span3'}),
+                              on.click(function() {
+                                  base.location.hash = "#components/"+name;
+                              })
+                             ),
 			  f.strong(article.toFoliage(title))))
     }
 })
